@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: d00b2d3ce0cea954d8771aa30d57d3a2
+timeCreated: 1442179850
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Cube_001
+    100002: Cube_002
+    100004: Cube_003
+    100006: Cube_004
+    100008: Cube_005
+    100010: Cube_006
+    100012: Cube_007
+    100014: Cube_008
+    100016: pit
+    100018: rim
+    100020: spike
+    100022: //RootNode
+    100024: wooden_Planks_000
+    100026: wooden_Planks_001
+    100028: wooden_Planks_002
+    100030: wooden_Planks_003
+    100032: wooden_Planks_004
+    100034: wooden_Planks_005
+    100036: woodenPlank
+    100038: woodenPlank_001
+    100040: woodenPlank_002
+    100042: woodenPlank_003
+    100044: woodenPlank_004
+    100046: woodenPlank_005
+    100048: woodenPlank_006
+    100050: woodenPlank_007
+    100052: woodenPlank_008
+    100054: woodenPlank_009
+    100056: woodenPlank_010
+    100058: woodenPlank_011
+    100060: woodenPlank_012
+    400000: Cube_001
+    400002: Cube_002
+    400004: Cube_003
+    400006: Cube_004
+    400008: Cube_005
+    400010: Cube_006
+    400012: Cube_007
+    400014: Cube_008
+    400016: pit
+    400018: rim
+    400020: spike
+    400022: //RootNode
+    400024: wooden_Planks_000
+    400026: wooden_Planks_001
+    400028: wooden_Planks_002
+    400030: wooden_Planks_003
+    400032: wooden_Planks_004
+    400034: wooden_Planks_005
+    400036: woodenPlank
+    400038: woodenPlank_001
+    400040: woodenPlank_002
+    400042: woodenPlank_003
+    400044: woodenPlank_004
+    400046: woodenPlank_005
+    400048: woodenPlank_006
+    400050: woodenPlank_007
+    400052: woodenPlank_008
+    400054: woodenPlank_009
+    400056: woodenPlank_010
+    400058: woodenPlank_011
+    400060: woodenPlank_012
+    2300000: Cube_001
+    2300002: Cube_002
+    2300004: Cube_003
+    2300006: Cube_004
+    2300008: Cube_005
+    2300010: Cube_006
+    2300012: Cube_007
+    2300014: Cube_008
+    2300016: pit
+    2300018: rim
+    2300020: spike
+    2300022: wooden_Planks_000
+    2300024: wooden_Planks_001
+    2300026: wooden_Planks_002
+    2300028: wooden_Planks_003
+    2300030: wooden_Planks_004
+    2300032: wooden_Planks_005
+    2300034: woodenPlank
+    2300036: woodenPlank_001
+    2300038: woodenPlank_002
+    2300040: woodenPlank_003
+    2300042: woodenPlank_004
+    2300044: woodenPlank_005
+    2300046: woodenPlank_006
+    2300048: woodenPlank_007
+    2300050: woodenPlank_008
+    2300052: woodenPlank_009
+    2300054: woodenPlank_010
+    2300056: woodenPlank_011
+    2300058: woodenPlank_012
+    3300000: Cube_001
+    3300002: Cube_002
+    3300004: Cube_003
+    3300006: Cube_004
+    3300008: Cube_005
+    3300010: Cube_006
+    3300012: Cube_007
+    3300014: Cube_008
+    3300016: pit
+    3300018: rim
+    3300020: spike
+    3300022: wooden_Planks_000
+    3300024: wooden_Planks_001
+    3300026: wooden_Planks_002
+    3300028: wooden_Planks_003
+    3300030: wooden_Planks_004
+    3300032: wooden_Planks_005
+    3300034: woodenPlank
+    3300036: woodenPlank_001
+    3300038: woodenPlank_002
+    3300040: woodenPlank_003
+    3300042: woodenPlank_004
+    3300044: woodenPlank_005
+    3300046: woodenPlank_006
+    3300048: woodenPlank_007
+    3300050: woodenPlank_008
+    3300052: woodenPlank_009
+    3300054: woodenPlank_010
+    3300056: woodenPlank_011
+    3300058: woodenPlank_012
+    4300000: woodenPlank_012
+    4300002: woodenPlank_011
+    4300004: woodenPlank_010
+    4300006: woodenPlank_009
+    4300008: woodenPlank_008
+    4300010: woodenPlank_007
+    4300012: woodenPlank_006
+    4300014: woodenPlank_005
+    4300016: wooden_Planks_005
+    4300018: wooden_Planks_004
+    4300020: wooden_Planks_001
+    4300022: wooden_Planks_000
+    4300024: woodenPlank_004
+    4300026: woodenPlank_003
+    4300028: woodenPlank_002
+    4300030: woodenPlank_001
+    4300032: woodenPlank
+    4300034: wooden_Planks_003
+    4300036: wooden_Planks_002
+    4300038: rim
+    4300040: Cube_008
+    4300042: Cube_007
+    4300044: Cube_006
+    4300046: Cube_005
+    4300048: Cube_004
+    4300050: Cube_003
+    4300052: Cube_002
+    4300054: Cube_001
+    4300056: spike
+    4300058: pit
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

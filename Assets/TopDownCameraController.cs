@@ -28,5 +28,32 @@ public class TopDownCameraController : MonoBehaviour {
 		}else if(Input.GetKey (KeyCode.D) && this.transform.position.z > minZ) {	
 			this.transform.position =  new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z- scrollSpeed);
 		}
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            this.transform.Rotate(-1,0,0, Space.Self);
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            this.transform.Rotate(1, 0, 0, Space.Self);
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            this.transform.Rotate(0, -1, 0, Space.World);
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            this.transform.Rotate(0, 1, 0, Space.World);
+        }
+        //go down
+        else if (Input.GetKey(KeyCode.LeftShift))
+        {
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - scrollSpeed, this.transform.position.z);
+        }
+        //go up
+        else if (Input.GetKey(KeyCode.Space))
+        {
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + scrollSpeed, this.transform.position.z);
+        }
+
 	}
 }
