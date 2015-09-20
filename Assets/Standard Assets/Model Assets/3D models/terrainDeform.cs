@@ -26,35 +26,31 @@ public class terrainDeform : MonoBehaviour {
 		//get the normalized position of this game object relativee to the terrain
         Vector3 tempCoord = getNormalizedPos(this.transform.position, terr);
 
-      //Debug.Log(this.transform.position + "\n");
-      //Debug.Log(terr.gameObject.transform.position + "\n");
-      //Debug.Log(tempCoord);
-		Vector3 coord;
-		coord.x = tempCoord.x / terr.terrainData.size.x;
-		coord.y = tempCoord.y / terr.terrainData.size.y;
-		coord.z = tempCoord.z / terr.terrainData.size.z;
+        //get position on terrain
+        Vector3 pos = GetRelativeTerrainPositionFromPos(this.transform.position, terr, terr.terrainData.heightmapWidth, terr.terrainData.heightmapHeight);
 
-		//get the position of the terrain heightmap where this game object is
-		posXInTerrain = (int)(coord.x * hmWidth);
-		posYInTerrain = (int)(coord.z * hmHeight);
+        Renderer renderer = GetComponent("renderer") as Renderer;
 
-		//set an offset so that all the raising terrain is under this game object
-		int offset = size / 2;
+        //get the heights at this position                                  
+        float[,] heights = Terrain.activeTerrain.terrainData.GetHeights((int)pos.x - (int)(renderer.bounds.size.x / 2),
+                                                                           (int)pos.z - (int)(renderer.bounds.size.z / 2),
+                                                                           (int)renderer.bounds.size.x + 1,
+                                                                           (int)renderer.bounds.size.z + 1);
 
-		//get the heights of the terrain under this game object
-		float[,] heights = terr.terrainData.GetHeights ((posXInTerrain - offset), (posYInTerrain - offset), size, size);
+        //increase the heights where this is by 1 500th of the size of the cube.
+        //Debug.Log("Size: " + this.renderer.bounds.size.x);
+        for (int x = 0; x < (int)renderer.bounds.size.x; ++x)
+        {
+            for (int y = 0; y < (int)renderer.bounds.size.z; ++y)
+            {
+                heights[x, y] += renderer.bounds.size.y / 750;
+            }
 
-        Debug.Log(heights);
-		//we set each sample of the terrain in the size to the desired height
-		for (int i=0; i < size; i++)
-			for (int j=0; j < size; j++)
-				heights [i, j] = desiredHeight;
-        Debug.Log(desiredHeight);
+        }
 
-       
-		//set new terrain
-		terr.terrainData.SetHeights (posXInTerrain - offset, posYInTerrain - offset, heights);
-    
+
+        terr.terrainData.SetHeights((int)pos.x - (int)renderer.bounds.size.x / 2 , (int)(pos.z) - (int)(renderer.bounds.size.z / 2), heights);
+         
 	}
 
     private Vector3 getNormalizedPos(Vector3 pos, Terrain ter)
