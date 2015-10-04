@@ -1,0 +1,824 @@
+fileFormatVersion: 2
+guid: 2a6db124df1e2de498541196c0287cbd
+timeCreated: 1443382144
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Cube.001
+    100004: Cube.002
+    100006: Cube.003
+    100008: Cube.004
+    100010: Cube.005
+    100012: Cube.006
+    100014: Cube.007
+    100016: Cube.008
+    100018: Hemi
+    100020: Lamp
+    100022: pit
+    100024: rim
+    100026: spike
+    100028: //RootNode
+    100030: wooden Planks.000
+    100032: wooden Planks.001
+    100034: wooden Planks.002
+    100036: wooden Planks.003
+    100038: wooden Planks.004
+    100040: wooden Planks.005
+    100042: woodenPlank
+    100044: woodenPlank.001
+    100046: woodenPlank.002
+    100048: woodenPlank.003
+    100050: woodenPlank.004
+    100052: woodenPlank.005
+    100054: woodenPlank.006
+    100056: woodenPlank.007
+    100058: woodenPlank.008
+    100060: woodenPlank.009
+    100062: woodenPlank.010
+    100064: woodenPlank.011
+    100066: woodenPlank.012
+    400000: Camera
+    400002: Cube.001
+    400004: Cube.002
+    400006: Cube.003
+    400008: Cube.004
+    400010: Cube.005
+    400012: Cube.006
+    400014: Cube.007
+    400016: Cube.008
+    400018: Hemi
+    400020: Lamp
+    400022: pit
+    400024: rim
+    400026: spike
+    400028: //RootNode
+    400030: wooden Planks.000
+    400032: wooden Planks.001
+    400034: wooden Planks.002
+    400036: wooden Planks.003
+    400038: wooden Planks.004
+    400040: wooden Planks.005
+    400042: woodenPlank
+    400044: woodenPlank.001
+    400046: woodenPlank.002
+    400048: woodenPlank.003
+    400050: woodenPlank.004
+    400052: woodenPlank.005
+    400054: woodenPlank.006
+    400056: woodenPlank.007
+    400058: woodenPlank.008
+    400060: woodenPlank.009
+    400062: woodenPlank.010
+    400064: woodenPlank.011
+    400066: woodenPlank.012
+    2300000: Cube.001
+    2300002: Cube.002
+    2300004: Cube.003
+    2300006: Cube.004
+    2300008: Cube.005
+    2300010: Cube.006
+    2300012: Cube.007
+    2300014: Cube.008
+    2300016: pit
+    2300018: rim
+    2300020: spike
+    2300022: wooden Planks.000
+    2300024: wooden Planks.001
+    2300026: wooden Planks.002
+    2300028: wooden Planks.003
+    2300030: wooden Planks.004
+    2300032: wooden Planks.005
+    2300034: woodenPlank
+    2300036: woodenPlank.001
+    2300038: woodenPlank.002
+    2300040: woodenPlank.003
+    2300042: woodenPlank.004
+    2300044: woodenPlank.005
+    2300046: woodenPlank.006
+    2300048: woodenPlank.007
+    2300050: woodenPlank.008
+    2300052: woodenPlank.009
+    2300054: woodenPlank.010
+    2300056: woodenPlank.011
+    2300058: woodenPlank.012
+    3300000: Cube.001
+    3300002: Cube.002
+    3300004: Cube.003
+    3300006: Cube.004
+    3300008: Cube.005
+    3300010: Cube.006
+    3300012: Cube.007
+    3300014: Cube.008
+    3300016: pit
+    3300018: rim
+    3300020: spike
+    3300022: wooden Planks.000
+    3300024: wooden Planks.001
+    3300026: wooden Planks.002
+    3300028: wooden Planks.003
+    3300030: wooden Planks.004
+    3300032: wooden Planks.005
+    3300034: woodenPlank
+    3300036: woodenPlank.001
+    3300038: woodenPlank.002
+    3300040: woodenPlank.003
+    3300042: woodenPlank.004
+    3300044: woodenPlank.005
+    3300046: woodenPlank.006
+    3300048: woodenPlank.007
+    3300050: woodenPlank.008
+    3300052: woodenPlank.009
+    3300054: woodenPlank.010
+    3300056: woodenPlank.011
+    3300058: woodenPlank.012
+    4300000: woodenPlank.012
+    4300002: woodenPlank.011
+    4300004: woodenPlank.010
+    4300006: woodenPlank.009
+    4300008: woodenPlank.008
+    4300010: woodenPlank.007
+    4300012: woodenPlank.006
+    4300014: woodenPlank.005
+    4300016: wooden Planks.005
+    4300018: wooden Planks.004
+    4300020: wooden Planks.001
+    4300022: wooden Planks.000
+    4300024: woodenPlank.004
+    4300026: woodenPlank.003
+    4300028: woodenPlank.002
+    4300030: woodenPlank.001
+    4300032: woodenPlank
+    4300034: wooden Planks.003
+    4300036: wooden Planks.002
+    4300038: rim
+    4300040: Cube.008
+    4300042: Cube.007
+    4300044: Cube.006
+    4300046: Cube.005
+    4300048: Cube.004
+    4300050: Cube.003
+    4300052: Cube.002
+    4300054: Cube.001
+    4300056: spike
+    4300058: pit
+    7400000: woodenPlank.012|wooden Planks.000Action.001
+    7400002: woodenPlank.012|wooden Planks.001Action.001
+    7400004: woodenPlank.012|wooden Planks.002Action
+    7400006: woodenPlank.012|wooden Planks.003Action.002
+    7400008: woodenPlank.012|wooden Planks.004Action.001
+    7400010: woodenPlank.012|wooden Planks.005Action.001
+    7400012: woodenPlank.012|woodenPlank.001Action.001
+    7400014: woodenPlank.012|woodenPlank.002Action.001
+    7400016: woodenPlank.012|woodenPlank.003Action.001
+    7400018: woodenPlank.012|woodenPlank.004Action.001
+    7400020: woodenPlank.012|woodenPlank.005Action.001
+    7400022: woodenPlank.012|woodenPlank.006Action.001
+    7400024: woodenPlank.012|woodenPlank.007Action
+    7400026: woodenPlank.012|woodenPlank.008Action.001
+    7400028: woodenPlank.012|woodenPlank.009Action.001
+    7400030: woodenPlank.012|woodenPlank.010Action.001
+    7400032: woodenPlank.012|woodenPlank.011Action
+    7400034: woodenPlank.012|woodenPlank.012Action
+    7400036: woodenPlank.011|wooden Planks.000Action.001
+    7400038: woodenPlank.011|wooden Planks.001Action.001
+    7400040: woodenPlank.011|wooden Planks.002Action
+    7400042: woodenPlank.011|wooden Planks.003Action.002
+    7400044: woodenPlank.011|wooden Planks.004Action.001
+    7400046: woodenPlank.011|wooden Planks.005Action.001
+    7400048: woodenPlank.011|woodenPlank.001Action.001
+    7400050: woodenPlank.011|woodenPlank.002Action.001
+    7400052: woodenPlank.011|woodenPlank.003Action.001
+    7400054: woodenPlank.011|woodenPlank.004Action.001
+    7400056: woodenPlank.011|woodenPlank.005Action.001
+    7400058: woodenPlank.011|woodenPlank.006Action.001
+    7400060: woodenPlank.011|woodenPlank.007Action
+    7400062: woodenPlank.011|woodenPlank.008Action.001
+    7400064: woodenPlank.011|woodenPlank.009Action.001
+    7400066: woodenPlank.011|woodenPlank.010Action.001
+    7400068: woodenPlank.011|woodenPlank.011Action
+    7400070: woodenPlank.011|woodenPlank.012Action
+    7400072: woodenPlank.010|wooden Planks.000Action.001
+    7400074: woodenPlank.010|wooden Planks.001Action.001
+    7400076: woodenPlank.010|wooden Planks.002Action
+    7400078: woodenPlank.010|wooden Planks.003Action.002
+    7400080: woodenPlank.010|wooden Planks.004Action.001
+    7400082: woodenPlank.010|wooden Planks.005Action.001
+    7400084: woodenPlank.010|woodenPlank.001Action.001
+    7400086: woodenPlank.010|woodenPlank.002Action.001
+    7400088: woodenPlank.010|woodenPlank.003Action.001
+    7400090: woodenPlank.010|woodenPlank.004Action.001
+    7400092: woodenPlank.010|woodenPlank.005Action.001
+    7400094: woodenPlank.010|woodenPlank.006Action.001
+    7400096: woodenPlank.010|woodenPlank.007Action
+    7400098: woodenPlank.010|woodenPlank.008Action.001
+    7400100: woodenPlank.010|woodenPlank.009Action.001
+    7400102: woodenPlank.010|woodenPlank.010Action.001
+    7400104: woodenPlank.010|woodenPlank.011Action
+    7400106: woodenPlank.010|woodenPlank.012Action
+    7400108: woodenPlank.009|wooden Planks.000Action.001
+    7400110: woodenPlank.009|wooden Planks.001Action.001
+    7400112: woodenPlank.009|wooden Planks.002Action
+    7400114: woodenPlank.009|wooden Planks.003Action.002
+    7400116: woodenPlank.009|wooden Planks.004Action.001
+    7400118: woodenPlank.009|wooden Planks.005Action.001
+    7400120: woodenPlank.009|woodenPlank.001Action.001
+    7400122: woodenPlank.009|woodenPlank.002Action.001
+    7400124: woodenPlank.009|woodenPlank.003Action.001
+    7400126: woodenPlank.009|woodenPlank.004Action.001
+    7400128: woodenPlank.009|woodenPlank.005Action.001
+    7400130: woodenPlank.009|woodenPlank.006Action.001
+    7400132: woodenPlank.009|woodenPlank.007Action
+    7400134: woodenPlank.009|woodenPlank.008Action.001
+    7400136: woodenPlank.009|woodenPlank.009Action.001
+    7400138: woodenPlank.009|woodenPlank.010Action.001
+    7400140: woodenPlank.009|woodenPlank.011Action
+    7400142: woodenPlank.009|woodenPlank.012Action
+    7400144: woodenPlank.008|wooden Planks.000Action.001
+    7400146: woodenPlank.008|wooden Planks.001Action.001
+    7400148: woodenPlank.008|wooden Planks.002Action
+    7400150: woodenPlank.008|wooden Planks.003Action.002
+    7400152: woodenPlank.008|wooden Planks.004Action.001
+    7400154: woodenPlank.008|wooden Planks.005Action.001
+    7400156: woodenPlank.008|woodenPlank.001Action.001
+    7400158: woodenPlank.008|woodenPlank.002Action.001
+    7400160: woodenPlank.008|woodenPlank.003Action.001
+    7400162: woodenPlank.008|woodenPlank.004Action.001
+    7400164: woodenPlank.008|woodenPlank.005Action.001
+    7400166: woodenPlank.008|woodenPlank.006Action.001
+    7400168: woodenPlank.008|woodenPlank.007Action
+    7400170: woodenPlank.008|woodenPlank.008Action.001
+    7400172: woodenPlank.008|woodenPlank.009Action.001
+    7400174: woodenPlank.008|woodenPlank.010Action.001
+    7400176: woodenPlank.008|woodenPlank.011Action
+    7400178: woodenPlank.008|woodenPlank.012Action
+    7400180: woodenPlank.007|wooden Planks.000Action.001
+    7400182: woodenPlank.007|wooden Planks.001Action.001
+    7400184: woodenPlank.007|wooden Planks.002Action
+    7400186: woodenPlank.007|wooden Planks.003Action.002
+    7400188: woodenPlank.007|wooden Planks.004Action.001
+    7400190: woodenPlank.007|wooden Planks.005Action.001
+    7400192: woodenPlank.007|woodenPlank.001Action.001
+    7400194: woodenPlank.007|woodenPlank.002Action.001
+    7400196: woodenPlank.007|woodenPlank.003Action.001
+    7400198: woodenPlank.007|woodenPlank.004Action.001
+    7400200: woodenPlank.007|woodenPlank.005Action.001
+    7400202: woodenPlank.007|woodenPlank.006Action.001
+    7400204: woodenPlank.007|woodenPlank.007Action
+    7400206: woodenPlank.007|woodenPlank.008Action.001
+    7400208: woodenPlank.007|woodenPlank.009Action.001
+    7400210: woodenPlank.007|woodenPlank.010Action.001
+    7400212: woodenPlank.007|woodenPlank.011Action
+    7400214: woodenPlank.007|woodenPlank.012Action
+    7400216: woodenPlank.006|wooden Planks.000Action.001
+    7400218: woodenPlank.006|wooden Planks.001Action.001
+    7400220: woodenPlank.006|wooden Planks.002Action
+    7400222: woodenPlank.006|wooden Planks.003Action.002
+    7400224: woodenPlank.006|wooden Planks.004Action.001
+    7400226: woodenPlank.006|wooden Planks.005Action.001
+    7400228: woodenPlank.006|woodenPlank.001Action.001
+    7400230: woodenPlank.006|woodenPlank.002Action.001
+    7400232: woodenPlank.006|woodenPlank.003Action.001
+    7400234: woodenPlank.006|woodenPlank.004Action.001
+    7400236: woodenPlank.006|woodenPlank.005Action.001
+    7400238: woodenPlank.006|woodenPlank.006Action.001
+    7400240: woodenPlank.006|woodenPlank.007Action
+    7400242: woodenPlank.006|woodenPlank.008Action.001
+    7400244: woodenPlank.006|woodenPlank.009Action.001
+    7400246: woodenPlank.006|woodenPlank.010Action.001
+    7400248: woodenPlank.006|woodenPlank.011Action
+    7400250: woodenPlank.006|woodenPlank.012Action
+    7400252: woodenPlank.005|wooden Planks.000Action.001
+    7400254: woodenPlank.005|wooden Planks.001Action.001
+    7400256: woodenPlank.005|wooden Planks.002Action
+    7400258: woodenPlank.005|wooden Planks.003Action.002
+    7400260: woodenPlank.005|wooden Planks.004Action.001
+    7400262: woodenPlank.005|wooden Planks.005Action.001
+    7400264: woodenPlank.005|woodenPlank.001Action.001
+    7400266: woodenPlank.005|woodenPlank.002Action.001
+    7400268: woodenPlank.005|woodenPlank.003Action.001
+    7400270: woodenPlank.005|woodenPlank.004Action.001
+    7400272: woodenPlank.005|woodenPlank.005Action.001
+    7400274: woodenPlank.005|woodenPlank.006Action.001
+    7400276: woodenPlank.005|woodenPlank.007Action
+    7400278: woodenPlank.005|woodenPlank.008Action.001
+    7400280: woodenPlank.005|woodenPlank.009Action.001
+    7400282: woodenPlank.005|woodenPlank.010Action.001
+    7400284: woodenPlank.005|woodenPlank.011Action
+    7400286: woodenPlank.005|woodenPlank.012Action
+    7400288: wooden Planks.005|wooden Planks.000Action.001
+    7400290: wooden Planks.005|wooden Planks.001Action.001
+    7400292: wooden Planks.005|wooden Planks.002Action
+    7400294: wooden Planks.005|wooden Planks.003Action.002
+    7400296: wooden Planks.005|wooden Planks.004Action.001
+    7400298: wooden Planks.005|wooden Planks.005Action.001
+    7400300: wooden Planks.005|woodenPlank.001Action.001
+    7400302: wooden Planks.005|woodenPlank.002Action.001
+    7400304: wooden Planks.005|woodenPlank.003Action.001
+    7400306: wooden Planks.005|woodenPlank.004Action.001
+    7400308: wooden Planks.005|woodenPlank.005Action.001
+    7400310: wooden Planks.005|woodenPlank.006Action.001
+    7400312: wooden Planks.005|woodenPlank.007Action
+    7400314: wooden Planks.005|woodenPlank.008Action.001
+    7400316: wooden Planks.005|woodenPlank.009Action.001
+    7400318: wooden Planks.005|woodenPlank.010Action.001
+    7400320: wooden Planks.005|woodenPlank.011Action
+    7400322: wooden Planks.005|woodenPlank.012Action
+    7400324: wooden Planks.004|wooden Planks.000Action.001
+    7400326: wooden Planks.004|wooden Planks.001Action.001
+    7400328: wooden Planks.004|wooden Planks.002Action
+    7400330: wooden Planks.004|wooden Planks.003Action.002
+    7400332: wooden Planks.004|wooden Planks.004Action.001
+    7400334: wooden Planks.004|wooden Planks.005Action.001
+    7400336: wooden Planks.004|woodenPlank.001Action.001
+    7400338: wooden Planks.004|woodenPlank.002Action.001
+    7400340: wooden Planks.004|woodenPlank.003Action.001
+    7400342: wooden Planks.004|woodenPlank.004Action.001
+    7400344: wooden Planks.004|woodenPlank.005Action.001
+    7400346: wooden Planks.004|woodenPlank.006Action.001
+    7400348: wooden Planks.004|woodenPlank.007Action
+    7400350: wooden Planks.004|woodenPlank.008Action.001
+    7400352: wooden Planks.004|woodenPlank.009Action.001
+    7400354: wooden Planks.004|woodenPlank.010Action.001
+    7400356: wooden Planks.004|woodenPlank.011Action
+    7400358: wooden Planks.004|woodenPlank.012Action
+    7400360: wooden Planks.001|wooden Planks.000Action.001
+    7400362: wooden Planks.001|wooden Planks.001Action.001
+    7400364: wooden Planks.001|wooden Planks.002Action
+    7400366: wooden Planks.001|wooden Planks.003Action.002
+    7400368: wooden Planks.001|wooden Planks.004Action.001
+    7400370: wooden Planks.001|wooden Planks.005Action.001
+    7400372: wooden Planks.001|woodenPlank.001Action.001
+    7400374: wooden Planks.001|woodenPlank.002Action.001
+    7400376: wooden Planks.001|woodenPlank.003Action.001
+    7400378: wooden Planks.001|woodenPlank.004Action.001
+    7400380: wooden Planks.001|woodenPlank.005Action.001
+    7400382: wooden Planks.001|woodenPlank.006Action.001
+    7400384: wooden Planks.001|woodenPlank.007Action
+    7400386: wooden Planks.001|woodenPlank.008Action.001
+    7400388: wooden Planks.001|woodenPlank.009Action.001
+    7400390: wooden Planks.001|woodenPlank.010Action.001
+    7400392: wooden Planks.001|woodenPlank.011Action
+    7400394: wooden Planks.001|woodenPlank.012Action
+    7400396: wooden Planks.000|wooden Planks.000Action.001
+    7400398: wooden Planks.000|wooden Planks.001Action.001
+    7400400: wooden Planks.000|wooden Planks.002Action
+    7400402: wooden Planks.000|wooden Planks.003Action.002
+    7400404: wooden Planks.000|wooden Planks.004Action.001
+    7400406: wooden Planks.000|wooden Planks.005Action.001
+    7400408: wooden Planks.000|woodenPlank.001Action.001
+    7400410: wooden Planks.000|woodenPlank.002Action.001
+    7400412: wooden Planks.000|woodenPlank.003Action.001
+    7400414: wooden Planks.000|woodenPlank.004Action.001
+    7400416: wooden Planks.000|woodenPlank.005Action.001
+    7400418: wooden Planks.000|woodenPlank.006Action.001
+    7400420: wooden Planks.000|woodenPlank.007Action
+    7400422: wooden Planks.000|woodenPlank.008Action.001
+    7400424: wooden Planks.000|woodenPlank.009Action.001
+    7400426: wooden Planks.000|woodenPlank.010Action.001
+    7400428: wooden Planks.000|woodenPlank.011Action
+    7400430: wooden Planks.000|woodenPlank.012Action
+    7400432: woodenPlank.004|wooden Planks.000Action.001
+    7400434: woodenPlank.004|wooden Planks.001Action.001
+    7400436: woodenPlank.004|wooden Planks.002Action
+    7400438: woodenPlank.004|wooden Planks.003Action.002
+    7400440: woodenPlank.004|wooden Planks.004Action.001
+    7400442: woodenPlank.004|wooden Planks.005Action.001
+    7400444: woodenPlank.004|woodenPlank.001Action.001
+    7400446: woodenPlank.004|woodenPlank.002Action.001
+    7400448: woodenPlank.004|woodenPlank.003Action.001
+    7400450: woodenPlank.004|woodenPlank.004Action.001
+    7400452: woodenPlank.004|woodenPlank.005Action.001
+    7400454: woodenPlank.004|woodenPlank.006Action.001
+    7400456: woodenPlank.004|woodenPlank.007Action
+    7400458: woodenPlank.004|woodenPlank.008Action.001
+    7400460: woodenPlank.004|woodenPlank.009Action.001
+    7400462: woodenPlank.004|woodenPlank.010Action.001
+    7400464: woodenPlank.004|woodenPlank.011Action
+    7400466: woodenPlank.004|woodenPlank.012Action
+    7400468: woodenPlank.003|wooden Planks.000Action.001
+    7400470: woodenPlank.003|wooden Planks.001Action.001
+    7400472: woodenPlank.003|wooden Planks.002Action
+    7400474: woodenPlank.003|wooden Planks.003Action.002
+    7400476: woodenPlank.003|wooden Planks.004Action.001
+    7400478: woodenPlank.003|wooden Planks.005Action.001
+    7400480: woodenPlank.003|woodenPlank.001Action.001
+    7400482: woodenPlank.003|woodenPlank.002Action.001
+    7400484: woodenPlank.003|woodenPlank.003Action.001
+    7400486: woodenPlank.003|woodenPlank.004Action.001
+    7400488: woodenPlank.003|woodenPlank.005Action.001
+    7400490: woodenPlank.003|woodenPlank.006Action.001
+    7400492: woodenPlank.003|woodenPlank.007Action
+    7400494: woodenPlank.003|woodenPlank.008Action.001
+    7400496: woodenPlank.003|woodenPlank.009Action.001
+    7400498: woodenPlank.003|woodenPlank.010Action.001
+    7400500: woodenPlank.003|woodenPlank.011Action
+    7400502: woodenPlank.003|woodenPlank.012Action
+    7400504: woodenPlank.002|wooden Planks.000Action.001
+    7400506: woodenPlank.002|wooden Planks.001Action.001
+    7400508: woodenPlank.002|wooden Planks.002Action
+    7400510: woodenPlank.002|wooden Planks.003Action.002
+    7400512: woodenPlank.002|wooden Planks.004Action.001
+    7400514: woodenPlank.002|wooden Planks.005Action.001
+    7400516: woodenPlank.002|woodenPlank.001Action.001
+    7400518: woodenPlank.002|woodenPlank.002Action.001
+    7400520: woodenPlank.002|woodenPlank.003Action.001
+    7400522: woodenPlank.002|woodenPlank.004Action.001
+    7400524: woodenPlank.002|woodenPlank.005Action.001
+    7400526: woodenPlank.002|woodenPlank.006Action.001
+    7400528: woodenPlank.002|woodenPlank.007Action
+    7400530: woodenPlank.002|woodenPlank.008Action.001
+    7400532: woodenPlank.002|woodenPlank.009Action.001
+    7400534: woodenPlank.002|woodenPlank.010Action.001
+    7400536: woodenPlank.002|woodenPlank.011Action
+    7400538: woodenPlank.002|woodenPlank.012Action
+    7400540: woodenPlank.001|wooden Planks.000Action.001
+    7400542: woodenPlank.001|wooden Planks.001Action.001
+    7400544: woodenPlank.001|wooden Planks.002Action
+    7400546: woodenPlank.001|wooden Planks.003Action.002
+    7400548: woodenPlank.001|wooden Planks.004Action.001
+    7400550: woodenPlank.001|wooden Planks.005Action.001
+    7400552: woodenPlank.001|woodenPlank.001Action.001
+    7400554: woodenPlank.001|woodenPlank.002Action.001
+    7400556: woodenPlank.001|woodenPlank.003Action.001
+    7400558: woodenPlank.001|woodenPlank.004Action.001
+    7400560: woodenPlank.001|woodenPlank.005Action.001
+    7400562: woodenPlank.001|woodenPlank.006Action.001
+    7400564: woodenPlank.001|woodenPlank.007Action
+    7400566: woodenPlank.001|woodenPlank.008Action.001
+    7400568: woodenPlank.001|woodenPlank.009Action.001
+    7400570: woodenPlank.001|woodenPlank.010Action.001
+    7400572: woodenPlank.001|woodenPlank.011Action
+    7400574: woodenPlank.001|woodenPlank.012Action
+    7400576: woodenPlank|wooden Planks.000Action.001
+    7400578: woodenPlank|wooden Planks.001Action.001
+    7400580: woodenPlank|wooden Planks.002Action
+    7400582: woodenPlank|wooden Planks.003Action.002
+    7400584: woodenPlank|wooden Planks.004Action.001
+    7400586: woodenPlank|wooden Planks.005Action.001
+    7400588: woodenPlank|woodenPlank.001Action.001
+    7400590: woodenPlank|woodenPlank.002Action.001
+    7400592: woodenPlank|woodenPlank.003Action.001
+    7400594: woodenPlank|woodenPlank.004Action.001
+    7400596: woodenPlank|woodenPlank.005Action.001
+    7400598: woodenPlank|woodenPlank.006Action.001
+    7400600: woodenPlank|woodenPlank.007Action
+    7400602: woodenPlank|woodenPlank.008Action.001
+    7400604: woodenPlank|woodenPlank.009Action.001
+    7400606: woodenPlank|woodenPlank.010Action.001
+    7400608: woodenPlank|woodenPlank.011Action
+    7400610: woodenPlank|woodenPlank.012Action
+    7400612: wooden Planks.003|wooden Planks.000Action.001
+    7400614: wooden Planks.003|wooden Planks.001Action.001
+    7400616: wooden Planks.003|wooden Planks.002Action
+    7400618: wooden Planks.003|wooden Planks.003Action.002
+    7400620: wooden Planks.003|wooden Planks.004Action.001
+    7400622: wooden Planks.003|wooden Planks.005Action.001
+    7400624: wooden Planks.003|woodenPlank.001Action.001
+    7400626: wooden Planks.003|woodenPlank.002Action.001
+    7400628: wooden Planks.003|woodenPlank.003Action.001
+    7400630: wooden Planks.003|woodenPlank.004Action.001
+    7400632: wooden Planks.003|woodenPlank.005Action.001
+    7400634: wooden Planks.003|woodenPlank.006Action.001
+    7400636: wooden Planks.003|woodenPlank.007Action
+    7400638: wooden Planks.003|woodenPlank.008Action.001
+    7400640: wooden Planks.003|woodenPlank.009Action.001
+    7400642: wooden Planks.003|woodenPlank.010Action.001
+    7400644: wooden Planks.003|woodenPlank.011Action
+    7400646: wooden Planks.003|woodenPlank.012Action
+    7400648: wooden Planks.002|wooden Planks.000Action.001
+    7400650: wooden Planks.002|wooden Planks.001Action.001
+    7400652: wooden Planks.002|wooden Planks.002Action
+    7400654: wooden Planks.002|wooden Planks.003Action.002
+    7400656: wooden Planks.002|wooden Planks.004Action.001
+    7400658: wooden Planks.002|wooden Planks.005Action.001
+    7400660: wooden Planks.002|woodenPlank.001Action.001
+    7400662: wooden Planks.002|woodenPlank.002Action.001
+    7400664: wooden Planks.002|woodenPlank.003Action.001
+    7400666: wooden Planks.002|woodenPlank.004Action.001
+    7400668: wooden Planks.002|woodenPlank.005Action.001
+    7400670: wooden Planks.002|woodenPlank.006Action.001
+    7400672: wooden Planks.002|woodenPlank.007Action
+    7400674: wooden Planks.002|woodenPlank.008Action.001
+    7400676: wooden Planks.002|woodenPlank.009Action.001
+    7400678: wooden Planks.002|woodenPlank.010Action.001
+    7400680: wooden Planks.002|woodenPlank.011Action
+    7400682: wooden Planks.002|woodenPlank.012Action
+    7400684: rim|wooden Planks.000Action.001
+    7400686: rim|wooden Planks.001Action.001
+    7400688: rim|wooden Planks.002Action
+    7400690: rim|wooden Planks.003Action.002
+    7400692: rim|wooden Planks.004Action.001
+    7400694: rim|wooden Planks.005Action.001
+    7400696: rim|woodenPlank.001Action.001
+    7400698: rim|woodenPlank.002Action.001
+    7400700: rim|woodenPlank.003Action.001
+    7400702: rim|woodenPlank.004Action.001
+    7400704: rim|woodenPlank.005Action.001
+    7400706: rim|woodenPlank.006Action.001
+    7400708: rim|woodenPlank.007Action
+    7400710: rim|woodenPlank.008Action.001
+    7400712: rim|woodenPlank.009Action.001
+    7400714: rim|woodenPlank.010Action.001
+    7400716: rim|woodenPlank.011Action
+    7400718: rim|woodenPlank.012Action
+    7400720: Hemi|wooden Planks.000Action.001
+    7400722: Hemi|wooden Planks.001Action.001
+    7400724: Hemi|wooden Planks.002Action
+    7400726: Hemi|wooden Planks.003Action.002
+    7400728: Hemi|wooden Planks.004Action.001
+    7400730: Hemi|wooden Planks.005Action.001
+    7400732: Hemi|woodenPlank.001Action.001
+    7400734: Hemi|woodenPlank.002Action.001
+    7400736: Hemi|woodenPlank.003Action.001
+    7400738: Hemi|woodenPlank.004Action.001
+    7400740: Hemi|woodenPlank.005Action.001
+    7400742: Hemi|woodenPlank.006Action.001
+    7400744: Hemi|woodenPlank.007Action
+    7400746: Hemi|woodenPlank.008Action.001
+    7400748: Hemi|woodenPlank.009Action.001
+    7400750: Hemi|woodenPlank.010Action.001
+    7400752: Hemi|woodenPlank.011Action
+    7400754: Hemi|woodenPlank.012Action
+    7400756: Cube.008|wooden Planks.000Action.001
+    7400758: Cube.008|wooden Planks.001Action.001
+    7400760: Cube.008|wooden Planks.002Action
+    7400762: Cube.008|wooden Planks.003Action.002
+    7400764: Cube.008|wooden Planks.004Action.001
+    7400766: Cube.008|wooden Planks.005Action.001
+    7400768: Cube.008|woodenPlank.001Action.001
+    7400770: Cube.008|woodenPlank.002Action.001
+    7400772: Cube.008|woodenPlank.003Action.001
+    7400774: Cube.008|woodenPlank.004Action.001
+    7400776: Cube.008|woodenPlank.005Action.001
+    7400778: Cube.008|woodenPlank.006Action.001
+    7400780: Cube.008|woodenPlank.007Action
+    7400782: Cube.008|woodenPlank.008Action.001
+    7400784: Cube.008|woodenPlank.009Action.001
+    7400786: Cube.008|woodenPlank.010Action.001
+    7400788: Cube.008|woodenPlank.011Action
+    7400790: Cube.008|woodenPlank.012Action
+    7400792: Cube.007|wooden Planks.000Action.001
+    7400794: Cube.007|wooden Planks.001Action.001
+    7400796: Cube.007|wooden Planks.002Action
+    7400798: Cube.007|wooden Planks.003Action.002
+    7400800: Cube.007|wooden Planks.004Action.001
+    7400802: Cube.007|wooden Planks.005Action.001
+    7400804: Cube.007|woodenPlank.001Action.001
+    7400806: Cube.007|woodenPlank.002Action.001
+    7400808: Cube.007|woodenPlank.003Action.001
+    7400810: Cube.007|woodenPlank.004Action.001
+    7400812: Cube.007|woodenPlank.005Action.001
+    7400814: Cube.007|woodenPlank.006Action.001
+    7400816: Cube.007|woodenPlank.007Action
+    7400818: Cube.007|woodenPlank.008Action.001
+    7400820: Cube.007|woodenPlank.009Action.001
+    7400822: Cube.007|woodenPlank.010Action.001
+    7400824: Cube.007|woodenPlank.011Action
+    7400826: Cube.007|woodenPlank.012Action
+    7400828: Cube.006|wooden Planks.000Action.001
+    7400830: Cube.006|wooden Planks.001Action.001
+    7400832: Cube.006|wooden Planks.002Action
+    7400834: Cube.006|wooden Planks.003Action.002
+    7400836: Cube.006|wooden Planks.004Action.001
+    7400838: Cube.006|wooden Planks.005Action.001
+    7400840: Cube.006|woodenPlank.001Action.001
+    7400842: Cube.006|woodenPlank.002Action.001
+    7400844: Cube.006|woodenPlank.003Action.001
+    7400846: Cube.006|woodenPlank.004Action.001
+    7400848: Cube.006|woodenPlank.005Action.001
+    7400850: Cube.006|woodenPlank.006Action.001
+    7400852: Cube.006|woodenPlank.007Action
+    7400854: Cube.006|woodenPlank.008Action.001
+    7400856: Cube.006|woodenPlank.009Action.001
+    7400858: Cube.006|woodenPlank.010Action.001
+    7400860: Cube.006|woodenPlank.011Action
+    7400862: Cube.006|woodenPlank.012Action
+    7400864: Cube.005|wooden Planks.000Action.001
+    7400866: Cube.005|wooden Planks.001Action.001
+    7400868: Cube.005|wooden Planks.002Action
+    7400870: Cube.005|wooden Planks.003Action.002
+    7400872: Cube.005|wooden Planks.004Action.001
+    7400874: Cube.005|wooden Planks.005Action.001
+    7400876: Cube.005|woodenPlank.001Action.001
+    7400878: Cube.005|woodenPlank.002Action.001
+    7400880: Cube.005|woodenPlank.003Action.001
+    7400882: Cube.005|woodenPlank.004Action.001
+    7400884: Cube.005|woodenPlank.005Action.001
+    7400886: Cube.005|woodenPlank.006Action.001
+    7400888: Cube.005|woodenPlank.007Action
+    7400890: Cube.005|woodenPlank.008Action.001
+    7400892: Cube.005|woodenPlank.009Action.001
+    7400894: Cube.005|woodenPlank.010Action.001
+    7400896: Cube.005|woodenPlank.011Action
+    7400898: Cube.005|woodenPlank.012Action
+    7400900: Cube.004|wooden Planks.000Action.001
+    7400902: Cube.004|wooden Planks.001Action.001
+    7400904: Cube.004|wooden Planks.002Action
+    7400906: Cube.004|wooden Planks.003Action.002
+    7400908: Cube.004|wooden Planks.004Action.001
+    7400910: Cube.004|wooden Planks.005Action.001
+    7400912: Cube.004|woodenPlank.001Action.001
+    7400914: Cube.004|woodenPlank.002Action.001
+    7400916: Cube.004|woodenPlank.003Action.001
+    7400918: Cube.004|woodenPlank.004Action.001
+    7400920: Cube.004|woodenPlank.005Action.001
+    7400922: Cube.004|woodenPlank.006Action.001
+    7400924: Cube.004|woodenPlank.007Action
+    7400926: Cube.004|woodenPlank.008Action.001
+    7400928: Cube.004|woodenPlank.009Action.001
+    7400930: Cube.004|woodenPlank.010Action.001
+    7400932: Cube.004|woodenPlank.011Action
+    7400934: Cube.004|woodenPlank.012Action
+    7400936: Cube.003|wooden Planks.000Action.001
+    7400938: Cube.003|wooden Planks.001Action.001
+    7400940: Cube.003|wooden Planks.002Action
+    7400942: Cube.003|wooden Planks.003Action.002
+    7400944: Cube.003|wooden Planks.004Action.001
+    7400946: Cube.003|wooden Planks.005Action.001
+    7400948: Cube.003|woodenPlank.001Action.001
+    7400950: Cube.003|woodenPlank.002Action.001
+    7400952: Cube.003|woodenPlank.003Action.001
+    7400954: Cube.003|woodenPlank.004Action.001
+    7400956: Cube.003|woodenPlank.005Action.001
+    7400958: Cube.003|woodenPlank.006Action.001
+    7400960: Cube.003|woodenPlank.007Action
+    7400962: Cube.003|woodenPlank.008Action.001
+    7400964: Cube.003|woodenPlank.009Action.001
+    7400966: Cube.003|woodenPlank.010Action.001
+    7400968: Cube.003|woodenPlank.011Action
+    7400970: Cube.003|woodenPlank.012Action
+    7400972: Cube.002|wooden Planks.000Action.001
+    7400974: Cube.002|wooden Planks.001Action.001
+    7400976: Cube.002|wooden Planks.002Action
+    7400978: Cube.002|wooden Planks.003Action.002
+    7400980: Cube.002|wooden Planks.004Action.001
+    7400982: Cube.002|wooden Planks.005Action.001
+    7400984: Cube.002|woodenPlank.001Action.001
+    7400986: Cube.002|woodenPlank.002Action.001
+    7400988: Cube.002|woodenPlank.003Action.001
+    7400990: Cube.002|woodenPlank.004Action.001
+    7400992: Cube.002|woodenPlank.005Action.001
+    7400994: Cube.002|woodenPlank.006Action.001
+    7400996: Cube.002|woodenPlank.007Action
+    7400998: Cube.002|woodenPlank.008Action.001
+    7401000: Cube.002|woodenPlank.009Action.001
+    7401002: Cube.002|woodenPlank.010Action.001
+    7401004: Cube.002|woodenPlank.011Action
+    7401006: Cube.002|woodenPlank.012Action
+    7401008: Cube.001|wooden Planks.000Action.001
+    7401010: Cube.001|wooden Planks.001Action.001
+    7401012: Cube.001|wooden Planks.002Action
+    7401014: Cube.001|wooden Planks.003Action.002
+    7401016: Cube.001|wooden Planks.004Action.001
+    7401018: Cube.001|wooden Planks.005Action.001
+    7401020: Cube.001|woodenPlank.001Action.001
+    7401022: Cube.001|woodenPlank.002Action.001
+    7401024: Cube.001|woodenPlank.003Action.001
+    7401026: Cube.001|woodenPlank.004Action.001
+    7401028: Cube.001|woodenPlank.005Action.001
+    7401030: Cube.001|woodenPlank.006Action.001
+    7401032: Cube.001|woodenPlank.007Action
+    7401034: Cube.001|woodenPlank.008Action.001
+    7401036: Cube.001|woodenPlank.009Action.001
+    7401038: Cube.001|woodenPlank.010Action.001
+    7401040: Cube.001|woodenPlank.011Action
+    7401042: Cube.001|woodenPlank.012Action
+    7401044: spike|wooden Planks.000Action.001
+    7401046: spike|wooden Planks.001Action.001
+    7401048: spike|wooden Planks.002Action
+    7401050: spike|wooden Planks.003Action.002
+    7401052: spike|wooden Planks.004Action.001
+    7401054: spike|wooden Planks.005Action.001
+    7401056: spike|woodenPlank.001Action.001
+    7401058: spike|woodenPlank.002Action.001
+    7401060: spike|woodenPlank.003Action.001
+    7401062: spike|woodenPlank.004Action.001
+    7401064: spike|woodenPlank.005Action.001
+    7401066: spike|woodenPlank.006Action.001
+    7401068: spike|woodenPlank.007Action
+    7401070: spike|woodenPlank.008Action.001
+    7401072: spike|woodenPlank.009Action.001
+    7401074: spike|woodenPlank.010Action.001
+    7401076: spike|woodenPlank.011Action
+    7401078: spike|woodenPlank.012Action
+    7401080: pit|wooden Planks.000Action.001
+    7401082: pit|wooden Planks.001Action.001
+    7401084: pit|wooden Planks.002Action
+    7401086: pit|wooden Planks.003Action.002
+    7401088: pit|wooden Planks.004Action.001
+    7401090: pit|wooden Planks.005Action.001
+    7401092: pit|woodenPlank.001Action.001
+    7401094: pit|woodenPlank.002Action.001
+    7401096: pit|woodenPlank.003Action.001
+    7401098: pit|woodenPlank.004Action.001
+    7401100: pit|woodenPlank.005Action.001
+    7401102: pit|woodenPlank.006Action.001
+    7401104: pit|woodenPlank.007Action
+    7401106: pit|woodenPlank.008Action.001
+    7401108: pit|woodenPlank.009Action.001
+    7401110: pit|woodenPlank.010Action.001
+    7401112: pit|woodenPlank.011Action
+    7401114: pit|woodenPlank.012Action
+    7401116: Lamp|wooden Planks.000Action.001
+    7401118: Lamp|wooden Planks.001Action.001
+    7401120: Lamp|wooden Planks.002Action
+    7401122: Lamp|wooden Planks.003Action.002
+    7401124: Lamp|wooden Planks.004Action.001
+    7401126: Lamp|wooden Planks.005Action.001
+    7401128: Lamp|woodenPlank.001Action.001
+    7401130: Lamp|woodenPlank.002Action.001
+    7401132: Lamp|woodenPlank.003Action.001
+    7401134: Lamp|woodenPlank.004Action.001
+    7401136: Lamp|woodenPlank.005Action.001
+    7401138: Lamp|woodenPlank.006Action.001
+    7401140: Lamp|woodenPlank.007Action
+    7401142: Lamp|woodenPlank.008Action.001
+    7401144: Lamp|woodenPlank.009Action.001
+    7401146: Lamp|woodenPlank.010Action.001
+    7401148: Lamp|woodenPlank.011Action
+    7401150: Lamp|woodenPlank.012Action
+    7401152: Camera|wooden Planks.000Action.001
+    7401154: Camera|wooden Planks.001Action.001
+    7401156: Camera|wooden Planks.002Action
+    7401158: Camera|wooden Planks.003Action.002
+    7401160: Camera|wooden Planks.004Action.001
+    7401162: Camera|wooden Planks.005Action.001
+    7401164: Camera|woodenPlank.001Action.001
+    7401166: Camera|woodenPlank.002Action.001
+    7401168: Camera|woodenPlank.003Action.001
+    7401170: Camera|woodenPlank.004Action.001
+    7401172: Camera|woodenPlank.005Action.001
+    7401174: Camera|woodenPlank.006Action.001
+    7401176: Camera|woodenPlank.007Action
+    7401178: Camera|woodenPlank.008Action.001
+    7401180: Camera|woodenPlank.009Action.001
+    7401182: Camera|woodenPlank.010Action.001
+    7401184: Camera|woodenPlank.011Action
+    7401186: Camera|woodenPlank.012Action
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
