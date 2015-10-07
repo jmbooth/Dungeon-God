@@ -20,7 +20,9 @@ public class terrainDeform : MonoBehaviour {
 		hmWidth = terr.terrainData.heightmapWidth;
 		hmHeight = terr.terrainData.heightmapHeight;
 	}
-	
+
+
+	/*
 	// Update is called once per frame
 	void Update () {
 		//get the normalized position of this game object relativee to the terrain
@@ -51,7 +53,7 @@ public class terrainDeform : MonoBehaviour {
 
         terr.terrainData.SetHeights((int)pos.x - (int)renderer.bounds.size.x / 2 , (int)(pos.z) - (int)(renderer.bounds.size.z / 2), heights);
          
-	}
+	}*/
 
     private Vector3 getNormalizedPos(Vector3 pos, Terrain ter)
     {
