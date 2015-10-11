@@ -18,15 +18,25 @@ public class SpikePitTrigger : MonoBehaviour {
 		if (sinceLastTrigger <= cooldown) {
 			sinceLastTrigger += Time.deltaTime;
 		}
+			
+		if (Input.GetButtonDown ("Fire1"))
+		{
+			Vector3 mousePos = Input.mousePosition;
+			Object trap = Resources.Load("Prefabs/SpikePitPrefab 1");
+			
+			Instantiate(trap, mousePos, Quaternion.identity);
+		}
 	}
 
     void OnTriggerEnter(Collider collider)
     {
 		if (sinceLastTrigger >= cooldown) {
-		Debug.Log ("Ahaha!");
+			Debug.Log ("You just activated my trap card!");
 			collider.gameObject.SendMessage ("TakeDamage", damage);
 			sinceLastTrigger = 0;
+		} else {
+			Debug.Log ("I'm tiiired.");
 		}
+	}
 
-    }
 }
