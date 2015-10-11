@@ -5,55 +5,52 @@ public class terrainDeform : MonoBehaviour {
 
 	// Use this for initialization
 	Terrain terr;
-	int hmWidth;
-	int hmHeight;
+	//int hmWidth;
+	//int hmHeight;
 	//heightmap height;
 
 	int posXInTerrain;
 	int posYInTerrain;
 
-	int size = 50;
-	float desiredHeight = 0;
-
 	void Start () {
 		terr = Terrain.activeTerrain;
-		hmWidth = terr.terrainData.heightmapWidth;
-		hmHeight = terr.terrainData.heightmapHeight;
+		//hmWidth = terr.terrainData.heightmapWidth;
+		//hmHeight = terr.terrainData.heightmapHeight;
 	}
 
 
-	/*
 	// Update is called once per frame
 	void Update () {
 		//get the normalized position of this game object relativee to the terrain
-        Vector3 tempCoord = getNormalizedPos(this.transform.position, terr);
+        //Vector3 tempCoord = getNormalizedPos(this.transform.position, terr);
 
         //get position on terrain
         Vector3 pos = GetRelativeTerrainPositionFromPos(this.transform.position, terr, terr.terrainData.heightmapWidth, terr.terrainData.heightmapHeight);
-
-        Renderer renderer = GetComponent("renderer") as Renderer;
-
+		
+		
         //get the heights at this position                                  
-        float[,] heights = Terrain.activeTerrain.terrainData.GetHeights((int)pos.x - (int)(renderer.bounds.size.x / 2),
-                                                                           (int)pos.z - (int)(renderer.bounds.size.z / 2),
-                                                                           (int)renderer.bounds.size.x + 1,
-                                                                           (int)renderer.bounds.size.z + 1);
-
-        //increase the heights where this is by 1 500th of the size of the cube.
-        //Debug.Log("Size: " + this.renderer.bounds.size.x);
-        for (int x = 0; x < (int)renderer.bounds.size.x; ++x)
+		float[,] heights = Terrain.activeTerrain.terrainData.GetHeights((int)pos.x - (int)(GetComponent<Renderer>().bounds.size.x),
+			                                                                (int)pos.z - (int)(GetComponent<Renderer>().bounds.size.z),
+			                                                                (int)GetComponent<Renderer>().bounds.size.x + 2,
+			                                                                (int)GetComponent<Renderer>().bounds.size.z + 2);
+		Debug.Log ("x: " + ((int)pos.x - (int)(GetComponent<Renderer> ().bounds.size.x)) + " \nz:" + ((int)pos.z - (int)(GetComponent<Renderer> ().bounds.size.z)));
+		Debug.Log ("x1:" + ( (int)GetComponent<Renderer>().bounds.size.x + 2)  + " \nz2:" + ((int)GetComponent<Renderer>().bounds.size.z + 2));
+		Debug.Log ("heights size: " + heights.Length);
+        //decrease the terrain height of where the object is by the height of the object
+        Debug.Log("Size: " + this.GetComponent<Renderer>().bounds.size.x);
+		for (int x = 0; x < (int)GetComponent<Renderer>().bounds.size.x; ++x)
         {
-            for (int y = 0; y < (int)renderer.bounds.size.z; ++y)
+			for (int y = 0; y < (int)GetComponent<Renderer>().bounds.size.z; ++y)
             {
-                heights[x, y] += renderer.bounds.size.y / 750;
+				Debug.Log("Pos: " + x + " " + y);
+				heights[x, y] -= GetComponent<Renderer>().bounds.size.y + 100;
             }
-
         }
 
 
-        terr.terrainData.SetHeights((int)pos.x - (int)renderer.bounds.size.x / 2 , (int)(pos.z) - (int)(renderer.bounds.size.z / 2), heights);
+        terr.terrainData.SetHeights((int)pos.x - (int)GetComponent<Renderer>().bounds.size.x / 2 , (int)(pos.z) - (int)(GetComponent<Renderer>().bounds.size.z / 2), heights);
          
-	}*/
+	}
 
     private Vector3 getNormalizedPos(Vector3 pos, Terrain ter)
     {
