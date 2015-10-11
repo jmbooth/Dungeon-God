@@ -23,7 +23,6 @@ public class SpikePitTrigger : MonoBehaviour {
     void OnTriggerEnter(Collider collider)
     {
 		if (sinceLastTrigger >= cooldown) {
-		Debug.Log ("Ahaha!");
 			collider.gameObject.SendMessage ("TakeDamage", damage);
 			sinceLastTrigger = 0;
 		}
