@@ -3,26 +3,31 @@ using System.Collections;
 
 public class TrapFactory : MonoBehaviour {
 
+	Object trap;
 	float location_temp;
 
 	// Use this for initialization
 	void Start () {
-		location_temp = 0;
+		trap = Resources.Load ("Prefabs/SpikePitPrefab 1");
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		// If the left mouse button is released
 		if (Input.GetButtonUp ("Fire1"))
 		{
-			//Vector3 mousePos = Input.mousePosition;
-			//mousePos.z = 2;
-			//mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-			Vector3 mousePos = new Vector3(location_temp, 2f, 0f);
-			Object trap = Resources.Load("Prefabs/SpikePitPrefab 1");
-			
-			Instantiate(trap, mousePos, Quaternion.identity);
+			// Creates a ray from the camera through the cursor
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
 
-			location_temp += 2;
+			// If the ray hits the terrain, create a trap on the terrain.
+			if (Physics.Raycast (ray, out hit, 200) && hit.collider.name == "Terrain") {
+				Debug.Log("I cast Ray and hit " + hit.collider.name);
+			
+				Vector3 terrainHit = hit.point;
+				Instantiate(trap, terrainHit, Quaternion.identity);
+			}
 		}
 	}
 }
