@@ -15,16 +15,9 @@ public class SpikePitTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (sinceLastTrigger <= cooldown) {
 			sinceLastTrigger += Time.deltaTime;
-		}
-			
-		if (Input.GetButtonDown ("Fire1"))
-		{
-			Vector3 mousePos = Input.mousePosition;
-			Object trap = Resources.Load("Prefabs/SpikePitPrefab 1");
-			
-			Instantiate(trap, mousePos, Quaternion.identity);
 		}
 	}
 
