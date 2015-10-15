@@ -37,7 +37,7 @@ public class TrapFactory : MonoBehaviour {
 		{
 			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-			if (Physics.Raycast (ray, out hit, 200) && hit.collider.name == "Terrain") {
+			if (Physics.Raycast (ray, out hit, 200, 255) && hit.collider.name == "Terrain") {
 				terrainHit = hit.point;
 				trapClone.transform.Translate(hit.point - trapClone.transform.position);
 			}
