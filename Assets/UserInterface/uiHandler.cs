@@ -21,23 +21,25 @@ public class uiHandler : MonoBehaviour {
     public Transform uiPrefab;
     private Transform monsterPrefabs;
     private Transform trapPrefabs;
-    private bool[] mSelect = {false,false,false,false,false,false };
+    private bool[] mSelect = { false, false, false, false, false, false };
     private bool[] tSelect = { false, false, false, false, false, false };
 
     void Start () {
+        
         Transform canvasTrans = Instantiate (uiPrefab, 
                                 new Vector3 (145, 25, 0), Quaternion.identity) as Transform;
+        // panels that contain the buttons
         buttonPanels[0] = GameObject.Find("TrapPanel");
         buttonPanels[1] = GameObject.Find("MonsterPanel");
+        // these buttons switch between the main button panels
         mButton = GameObject.Find("Monsters").GetComponent<Button>();
         tButton = GameObject.Find("Traps").GetComponent<Button>();
         tButton.onClick.AddListener(() => { SetActivePanel(0); });
         mButton.onClick.AddListener(() => { SetActivePanel(1); });
-              string t = "TrapPanel";
-              string m = "MonsterPanel";
-              trapButtons = GameObject.Find(t).GetComponents<Button>();
-              monsterButtons = GameObject.Find(m).GetComponents<Button>();
-        buttonPanels[1].SetActive(false);
+        //init rest of the buttons
+        trapButtons = GameObject.Find("TrapPanel").GetComponents<Button>();
+        monsterButtons = GameObject.Find("MonsterPanel").GetComponents<Button>();
+        // set listeners
         for (int i = 0; i < trapButtons.Length; i++)
         {
             trapButtons[i].onClick.AddListener(() =>
@@ -49,44 +51,45 @@ public class uiHandler : MonoBehaviour {
                 MonsterHandler(i);
             });
         }
+        //hide monster panel
+        buttonPanels[1].SetActive(false);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
         for(int i=0; i<monsterButtons.Length; i++)
         {
-            if (mSelect[i] = true && Input.GetMouseButtonUp(3))
+            /*
+            if (mSelect[i] == true)
             {
 
             }
-            else {
-                // remove highlight
+            else if () {
+                mSelect[i] = false;
             }
-            if (tSelect[i] = true && Input.GetMouseButtonUp(3))
+            if (tSelect[i] == true)
             {
-
+               
             }
-            else {
-                // remove highlight
+            else if (){
+                tSelect[i] = false;
             }
-            }
-        
+            */
+         }
     }
 
     void TrapHandler(int t)
     {
         for (int i = 0; i < monsterButtons.Length; i++)
         {
-            if (i == t)
+            if (i == t && tSelect[i] == false)
+            {
                 tSelect[i] = true;
+            }
             else
+            {
                 tSelect[i] = false;
-        }
-        while (1 == 1)
-        {
-            if (tSelect[t] == false || Input.GetMouseButtonDown(2))
-                break;
+            }
         }
     }
 
@@ -94,16 +97,14 @@ public class uiHandler : MonoBehaviour {
     {
         for(int i = 0; i < monsterButtons.Length; i++)
         {
-            if (i == m)
+            if (i == m & mSelect[i] == false)
+            {
                 mSelect[i] = true;
+            }
             else
+            {
                 mSelect[i] = false;
-        }
-        while (1==1)
-        {
-
-            if (mSelect[m] == false||Input.GetMouseButtonDown(2))
-                break;
+            }
         }
     }
 
