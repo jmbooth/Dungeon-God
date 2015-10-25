@@ -15,6 +15,7 @@ public class SpikePitTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (sinceLastTrigger <= cooldown) {
 			sinceLastTrigger += Time.deltaTime;
 		}
@@ -23,10 +24,12 @@ public class SpikePitTrigger : MonoBehaviour {
     void OnTriggerEnter(Collider collider)
     {
 		if (sinceLastTrigger >= cooldown) {
-		Debug.Log ("Ahaha!");
+			Debug.Log ("You just activated my trap card!");
 			collider.gameObject.SendMessage ("TakeDamage", damage);
 			sinceLastTrigger = 0;
+		} else {
+			Debug.Log ("I'm tiiired.");
 		}
+	}
 
-    }
 }
