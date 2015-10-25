@@ -11,7 +11,7 @@ public class clickAction : MonoBehaviour {
 	void Start () {
         move = false;
 	}
-	
+	/*
 	// Update is called once per frame
 	void Update () {
         if(Input.GetAxis("mouse x")<0){
@@ -39,4 +39,5 @@ public class clickAction : MonoBehaviour {
         //this line changes the position of the vector
         transform.position = new Vector3(posMove.x, transform.position.y, posMove.z);
     }
+    */
 }
