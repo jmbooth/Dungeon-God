@@ -14,7 +14,7 @@ public class TrapFactory : MonoBehaviour {
 	void Start () {
 		trapBase = Resources.Load ("Prefabs/SpikePitPrefab 1");
 		trapGhost = Resources.Load ("Prefabs/SpikePitGhost");
-		layermask = 511;
+		layermask = 1023;
 	}
 	
 	// Update is called once per frame
