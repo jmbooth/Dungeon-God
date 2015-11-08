@@ -50,61 +50,7 @@ public class uiHandler : MonoBehaviour {
 	void Update () {
 		//update Player gold text
 		goldText.text = "Gold: "+playerGold;
-		for(int i=0; i<monsterButtons.Length; i++)
-		{
-			/*
-			if (mSelect[i] == true)
-			{
-
-			}
-			else if () {
-				mSelect[i] = false;
-			}
-			if (tSelect[i] == true)
-			{
-			   
-			}
-			else if (){
-				tSelect[i] = false;
-			}
-			*/
-		 }
 	}
-
-	void TrapHandler(int t)
-	{
-		Debug.Log (trapButtons [t].name + " pressed");
-		for (int i = 0; i < monsterButtons.Length; i++)
-		{
-			if (i == t && tSelect[i] == false)
-			{
-				tSelect[i] = true;
-			}
-			else
-			{
-				tSelect[i] = false;
-			}
-		}
-	}
-
-
-	void MonsterHandler(int m)
-	{
-		Debug.Log(monsterButtons[m].name + " pressed");
-		monsterButtons [m].image.color = Color.blue;
-		for(int i = 0; i < monsterButtons.Length; i++)
-		{
-			if (i == m & mSelect[i] == false)
-			{
-				mSelect[i] = true;
-			}
-			else
-			{
-				mSelect[i] = false;
-			}
-		}
-	}
-
 
 	void setPlayerGold(int gold){
 		playerGold = gold;
