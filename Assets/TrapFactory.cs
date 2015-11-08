@@ -6,6 +6,7 @@ public class TrapFactory : MonoBehaviour {
 	Object trapBase;
 	Object trapGhost;
 	GameObject trapClone;
+
 	float location_temp;
 	int layermask;
 	float vOffset = 0.2f;
@@ -62,6 +63,7 @@ public class TrapFactory : MonoBehaviour {
 				trapClone = null;
 
 				Instantiate(trapBase, terrainHit, Quaternion.identity);
+
 
 				Debug.Log ("Trap Placed");
 			}
