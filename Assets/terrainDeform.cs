@@ -12,7 +12,7 @@ public class terrainDeform : MonoBehaviour {
 	int posXInTerrain;
 	int posYInTerrain;
 
-	public void Start () {Debug.Log ("deform");
+	public void Start () {
 		terr = Terrain.activeTerrain;
 
         //get position on terrain
@@ -24,19 +24,19 @@ public class terrainDeform : MonoBehaviour {
 			                                                                (int)GetComponent<BoxCollider>().bounds.size.x + 2,
 			                                                                (int)GetComponent<BoxCollider>().bounds.size.z + 2);
 
-		Debug.Log ("x: " + ((int)pos.x - (int)(GetComponent<BoxCollider> ().bounds.size.x)) + " \nz:" + ((int)pos.z - (int)(GetComponent<BoxCollider> ().bounds.size.z)));
-		Debug.Log ("x1:" + ( (int)GetComponent<BoxCollider>().bounds.size.x + 2)  + " \nz2:" + ((int)GetComponent<BoxCollider>().bounds.size.z + 2));
-		Debug.Log ("heights size: " + heights.Length);
+		//Debug.Log ("x: " + ((int)pos.x - (int)(GetComponent<BoxCollider> ().bounds.size.x)) + " \nz:" + ((int)pos.z - (int)(GetComponent<BoxCollider> ().bounds.size.z)));
+		//Debug.Log ("x1:" + ( (int)GetComponent<BoxCollider>().bounds.size.x + 2)  + " \nz2:" + ((int)GetComponent<BoxCollider>().bounds.size.z + 2));
+		//Debug.Log ("heights size: " + heights.Length);
 
         //decrease the terrain height of where the object is by the height of the object
-        Debug.Log("Size: " + this.GetComponent<BoxCollider>().bounds.size.x);
+       // Debug.Log("Size: " + this.GetComponent<BoxCollider>().bounds.size.x);
 		for (int x = 0; x < heights.GetLength(1); ++x)
         {
 			for (int y = 0; y < heights.GetLength(0); ++y)
             {
-				Debug.Log("Pos: " + x + " " + y + "\nheight before:"+heights[x,y]);
+				//Debug.Log("Pos: " + x + " " + y + "\nheight before:"+heights[x,y]);
 				heights[x, y] -= GetComponent<BoxCollider>().bounds.size.y + 100;
-				Debug.Log("height after:"+heights[x,y]);
+				//Debug.Log("height after:"+heights[x,y]);
             }
         }
 
