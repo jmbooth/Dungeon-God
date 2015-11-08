@@ -4,12 +4,18 @@ using System.Collections;
 public class TrapFactory : MonoBehaviour {
 
 	Object trapBase;
+	Object trapGhost;
 	GameObject trapClone;
+
 	float location_temp;
+	int layermask;
+	float vOffset = 0.2f;
 
 	// Use this for initialization
 	void Start () {
 		trapBase = Resources.Load ("Prefabs/SpikePitPrefab 1");
+		trapGhost = Resources.Load ("Prefabs/SpikePitGhost");
+		layermask = 511;
 	}
 	
 	// Update is called once per frame
@@ -24,11 +30,10 @@ public class TrapFactory : MonoBehaviour {
 			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
 			// If the ray hits the terrain, create a trap on the terrain.
-			if (Physics.Raycast (ray, out hit, 200) && hit.collider.name == "Terrain") {
-				Debug.Log("I cast Ray and hit " + hit.collider.name);
-				
+			if (Physics.Raycast (ray, out hit, 200, layermask) && hit.collider.name == "Terrain") {
 				terrainHit = hit.point;
-				trapClone = (GameObject) Instantiate(trapBase, terrainHit, Quaternion.identity);
+				terrainHit.y += vOffset;
+				trapClone = (GameObject) Instantiate(trapGhost, hit.point, Quaternion.identity);
 			}
 		}
 
@@ -37,9 +42,10 @@ public class TrapFactory : MonoBehaviour {
 		{
 			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-			if (Physics.Raycast (ray, out hit, 200, 255) && hit.collider.name == "Terrain") {
+			if (Physics.Raycast (ray, out hit, 200, layermask) && hit.collider.name == "Terrain") {
 				terrainHit = hit.point;
-				trapClone.transform.Translate(hit.point - trapClone.transform.position);
+				terrainHit.y += vOffset;
+				trapClone.transform.Translate(terrainHit - trapClone.transform.position);
 			}
 		}
 
@@ -47,11 +53,18 @@ public class TrapFactory : MonoBehaviour {
 		if (Input.GetButtonUp ("Fire1")) {
 			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			
-			if (Physics.Raycast (ray, out hit, 200) && hit.collider.name == "Terrain") {
+			if (Physics.Raycast (ray, out hit, 200, layermask) && hit.collider.name == "Terrain") {
+				
 				terrainHit = hit.point;
-				trapClone.transform.Translate (hit.point);
+				terrainHit.y += vOffset;
 
+				trapClone.transform.Translate (terrainHit - trapClone.transform.position);
+				Object.Destroy(trapClone, 0.5f);
 				trapClone = null;
+
+				Instantiate(trapBase, terrainHit, Quaternion.identity);
+
+
 				Debug.Log ("Trap Placed");
 			}
 		}
