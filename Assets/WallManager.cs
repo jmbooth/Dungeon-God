@@ -47,7 +47,12 @@ public class WallManager : MonoBehaviour {
 
 		return output;
 	}
-	
+
+	public GameObject[,] getList()
+	{
+		return WallGrid;
+	}
+
 	// Update is called once per frame
 	void Update () {
 		Ray ray;
