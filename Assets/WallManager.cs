@@ -92,7 +92,11 @@ public class WallManager : MonoBehaviour {
 				int[] floorHit = WorldToGrid (hit.point);
 
 				//if there is already something there - don't place a trap under it
-				if(WallGrid[floorHit [0],floorHit [1]] == null)
+				if(WallGrid[floorHit [0],floorHit [1]] != null)
+				{
+					Destroy (WallGrid [floorHit [0], floorHit [1]], 0.2f);
+					WallGrid [floorHit [0], floorHit [1]] = null;
+				}else
 				{
 					Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
 					Debug.Log ("Grid place x: " + floorHit [0] + "  z: " + floorHit [1]);
