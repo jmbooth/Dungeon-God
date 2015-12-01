@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using UnityEngine.UI;
@@ -21,13 +21,10 @@ public class uiHandler : MonoBehaviour {
 	public Transform uiPrefab;
 	private Transform monsterPrefabs;
 	private Transform trapPrefabs;
-	private bool[] mSelect = { false, false, false, false, false, false };
-	private bool[] tSelect = { false, false, false, false, false, false };
 	protected bool toggleFlag=true;
-	protected int playerGold;
+	public int playerGold;
 	protected Text goldText;
 	void Start () {
-		
 		//Transform canvasTrans = Instantiate (uiPrefab, 
 		//						new Vector3 (145, 25, 0), Quaternion.identity) as Transform;
 		// panels that contain the buttons
@@ -40,10 +37,6 @@ public class uiHandler : MonoBehaviour {
 		//init rest of the buttons
 		trapButtons = buttonPanels[0].GetComponentsInChildren<Button>();
 		monsterButtons = buttonPanels[1].GetComponentsInChildren<Button>();
-		// set listeners
-
-		//hide monster panel
-		buttonPanels[1].SetActive(false);
 	}
 	
 	// Update is called once per frame
