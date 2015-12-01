@@ -17,6 +17,7 @@ public class Save : MonoBehaviour
     //it's static so we can call it from anywhere
     public  void save2()
     {
+        EditorApplication.Beep();
         showGUI = true;
         Debug.Log("showguid is " + stringToEdit);
         fileNo++;
