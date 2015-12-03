@@ -8,8 +8,8 @@ public class WallManager : MonoBehaviour {
 	Object TrapBase;
 	static int wSize = 5;
 	static float wOffset = wSize / 2.0f;
-	int layermask = 256;
-
+	int layermask = 256 + 32; 
+	
 	// Use this for initialization
 	void Start () {
 
@@ -58,15 +58,16 @@ public class WallManager : MonoBehaviour {
 
 			// If the ray hits a wall, this destroys the wall
 			if (Physics.Raycast (ray, out hit, 200, layermask)) {
+
 				int[] wallHit = WorldToGrid (hit.point);
 
-				Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
-				Debug.Log ("Grid place x: " + wallHit [0] + "  z: " + wallHit [1]);
+				//Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
+				//Debug.Log ("Grid place x: " + wallHit [0] + "  z: " + wallHit [1]);
 
 				Destroy (WallGrid [wallHit [0], wallHit [1]], 0.2f);
 				WallGrid [wallHit [0], wallHit [1]] = null;
 			}
-
+			/*
 		} else if (Input.GetButtonDown ("Fire2")) {
 
 			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
@@ -74,12 +75,12 @@ public class WallManager : MonoBehaviour {
 			if (Physics.Raycast (ray, out hit, 200, 2048)) {
 				int[] floorHit = WorldToGrid (hit.point);
 
-				Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
-				Debug.Log ("Grid place x: " + floorHit [0] + "  z: " + floorHit [1]);
+				//Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
+				//Debug.Log ("Grid place x: " + floorHit [0] + "  z: " + floorHit [1]);
 
 				Vector3 pos = new Vector3 ((floorHit[0] * wSize) + wOffset, 0.5f, (floorHit[1] * wSize) + wOffset);
 				Instantiate (TrapBase, pos, Quaternion.identity);
-			}
+			}*/
 		}
 	}
 }
