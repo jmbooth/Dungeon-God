@@ -26,6 +26,11 @@ public class WallManager : MonoBehaviour {
 		}
 	}
 
+    public GameObject[,] getList()
+    {
+        return WallGrid;
+    }
+
 	static int[] WorldToGrid(Vector3 input) {
 		int[] output = new int[2];
 
@@ -67,23 +72,9 @@ public class WallManager : MonoBehaviour {
 
 				int[] wallHit = WorldToGrid (hit.point);
 
-				//Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
-				//Debug.Log ("Grid place x: " + wallHit [0] + "  z: " + wallHit [1]);
-				Vector3 pos = new Vector3 ((wallHit[0] * wSize) + wOffset, 0.5f, (wallHit[1] * wSize) + wOffset);
-
-				//if the wall already exists then destroy it
-				if(WallGrid[wallHit [0],wallHit [1]] != null)
-				{
-					Destroy (WallGrid [wallHit [0], wallHit [1]], 0.2f);
-					WallGrid [wallHit [0], wallHit [1]] = (GameObject) Instantiate (Resources.Load ("Prefab/EmptySpace"), pos, Quaternion.identity); //Instantiate (Resources.Load;
-
-				}
-				else
-				{
-					//create new wall instead of destroy it
-					WallGrid[wallHit [0],wallHit [1]] = (GameObject)Instantiate (WallBase, pos, Quaternion.identity);
-					WallGrid[wallHit [0],wallHit [1]].name = "Wall(" + wallHit[0] + "," + wallHit[1] + ")";
-				}
+                Vector3 pos = new Vector3((wallHit[0] * wSize) + wOffset, 0.5f, (wallHit[1] * wSize) + wOffset);
+                Destroy (WallGrid [wallHit [0], wallHit [1]], 0.2f);
+				WallGrid [wallHit [0], wallHit [1]] = (GameObject)Instantiate(Resources.Load("Prefabs/EmptySpace"), pos, Quaternion.identity); ;
 			}
 		} else if (Input.GetButtonDown ("Fire2")) {
 
@@ -92,22 +83,15 @@ public class WallManager : MonoBehaviour {
 			if (Physics.Raycast (ray, out hit, 200, 2048)) {
 				int[] floorHit = WorldToGrid (hit.point);
 
-				//if there is already something there - don't place a trap under it
-				if(WallGrid[floorHit [0],floorHit [1]] != null)
-				{
-					Destroy (WallGrid [floorHit [0], floorHit [1]], 0.2f);
-					WallGrid [floorHit [0], floorHit [1]] = null;
-				}else
-				{
-					Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
-					Debug.Log ("Grid place x: " + floorHit [0] + "  z: " + floorHit [1]);
+				Debug.Log ("Coords x: " + hit.point.x + "  z: " + hit.point.z);
+				Debug.Log ("Grid place x: " + floorHit [0] + "  z: " + floorHit [1]);
 
-					Vector3 pos = new Vector3 ((floorHit[0] * wSize) + wOffset, 0.5f, (floorHit[1] * wSize) + wOffset);
-					WallGrid[floorHit [0],floorHit [1]] = (GameObject)Instantiate (TrapBase, pos, Quaternion.identity);
+				Vector3 pos = new Vector3 ((floorHit[0] * wSize) + wOffset, 0.5f, (floorHit[1] * wSize) + wOffset);
+				Object tmp = Instantiate (TrapBase, pos, Quaternion.identity);
+                tmp.name = "Trap Spike";
 
-					WallGrid[floorHit[0], floorHit [1]].name = "Trap Spike " + floorHit[0] + " " + floorHit[1];
-				}
-			}
+                WallGrid[floorHit[0], floorHit[1]] = (GameObject) tmp;
+            }
 		}
 	}
 }
