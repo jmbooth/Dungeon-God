@@ -9,8 +9,9 @@ using UnityEditor;
 //Handles saving/loading a scene, must be attatched to an empty game object
 //to be seen by a button.  The lighting gets messed up sometimes when switching around
 //scenes.  Make sure to disable lightmaps (continuous baking)
-public class savescene : MonoBehaviour
-{
+
+public class savescene: MonoBehaviour{
+
     public bool showGUI = false;
     public bool showLoadGUI = false;
     public string stringToEdit = "Autosave";//Name of file user gives
