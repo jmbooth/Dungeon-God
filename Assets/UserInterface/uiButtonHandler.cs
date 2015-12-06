@@ -97,7 +97,7 @@ public class uiButtonHandler : MonoBehaviour
 	public void trapHandler (String b)
 	{
 		char c = b [b.Length - 1];
-		if (uiScript.playerGold > tCost [c - '0'] && !inUse [(c - '0') - 1]) {
+		if (!inUse [(c - '0') - 1]) {
 			//trap placement active
 			inUse [c - '0'] = true;
 		} else if (inUse [(c - '0') - 1]) {

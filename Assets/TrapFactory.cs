@@ -10,13 +10,11 @@ public class TrapFactory : MonoBehaviour {
 	int layermask;
 	float vOffset = 0.2f;
 	//script is for using player resources when placing traps	
-	uiHandler uiScript; 
 	// Use this for initialization
 	void Start () {
 		trapBase = Resources.Load ("Prefabs/SpikePitPrefab 1");
 		trapGhost = Resources.Load ("Prefabs/SpikePitGhost");
 		layermask = 1023;
-		uiScript = GameObject.Find ("UICanvas").GetComponent <uiHandler>();
 	}
 	
 	// Update is called once per frame
@@ -66,7 +64,6 @@ public class TrapFactory : MonoBehaviour {
 				Instantiate(trapBase, terrainHit, Quaternion.identity);
 				//hardcoded cost for trap
 				//TODO: change when we have more trap types
-				uiScript.playerGold -=1;
 				Debug.Log ("Trap Placed");
 			}
 		}
