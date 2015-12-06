@@ -28,7 +28,7 @@ public class PathFinder : MonoBehaviour {
         // Cache agent component and destination
         agent = GetComponent<NavMeshAgent>();
         destinationTresure = agent.destination;
-        GameObject[,] Array = listHolder.getList();
+        GameObject[,] Array = listHolder.GetList();
         //sets targetGrid to current position.
         targetGrid = Array[0, 0] ;
 
@@ -78,7 +78,7 @@ public class PathFinder : MonoBehaviour {
         int next = 0;
         GameObject tmp;
         GameObject[] List=new GameObject[9];
-        GameObject[,] Array = listHolder.getList();
+        GameObject[,] Array = listHolder.GetList();
         //new GameObject[10][10];
         for(int i = -1; i < 2; i++){
             for (int j = -1; j < 2; j++)
@@ -130,11 +130,11 @@ public class PathFinder : MonoBehaviour {
         {
             tester.text = "else";
             if (firstTime == 1)
-                targetGrid = listHolder.getList()[0, 0];
+                targetGrid = listHolder.GetList()[0, 0];
             DFS(targetGrid);
             }
 
-        test = listHolder.getList();
+        test = listHolder.GetList();
         if (test[3, 3] == null)
             tester.text = "not Wall";
         //else if (test[3, 3].name.Contains("Wall"))

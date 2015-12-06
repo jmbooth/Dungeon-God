@@ -3,11 +3,11 @@ using System.Collections;
 
 public class WallManager : MonoBehaviour {
 
-	static int gridDim = 20;
+	static int gridDim = 10;
 	GameObject[,] WallGrid = new GameObject[gridDim,gridDim];
 	Object WallBase;
 	Object TrapBase;
-	static int wSize = 2; // Grid square size
+	static int wSize = 5; // Grid square size
 	static float wOffset = wSize / 2.0f;
 	int layermask = 256 + 32; 
 	
@@ -26,10 +26,19 @@ public class WallManager : MonoBehaviour {
 		}
 	}
 
-    public GameObject[,] getList()
+    public GameObject[,] GetList()
     {
         return WallGrid;
     }
+
+	public bool SetList(int x, int z, GameObject obj, bool force) {
+		if (WallGrid [x, z] == null && !force) {
+			return false;
+		}
+
+		WallGrid [x, z] = obj;
+		return true;
+	}
 
 	static int[] WorldToGrid(Vector3 input) {
 		int[] output = new int[2];
@@ -53,11 +62,6 @@ public class WallManager : MonoBehaviour {
 		return output;
 	}
 
-	public GameObject[,] getList()
-	{
-		return WallGrid;
-	}
-
 	// Update is called once per frame
 	void Update () {
 		Ray ray;
@@ -76,7 +80,7 @@ public class WallManager : MonoBehaviour {
                 Destroy (WallGrid [wallHit [0], wallHit [1]], 0.2f);
 				WallGrid [wallHit [0], wallHit [1]] = (GameObject)Instantiate(Resources.Load("Prefabs/EmptySpace"), pos, Quaternion.identity); ;
 			}
-		} else if (Input.GetButtonDown ("Fire2")) {
+		} /*else if (Input.GetButtonDown ("Fire2")) {
 
 			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
@@ -92,6 +96,6 @@ public class WallManager : MonoBehaviour {
 
                 WallGrid[floorHit[0], floorHit[1]] = (GameObject) tmp;
             }
-		}
+		}*/
 	}
 }

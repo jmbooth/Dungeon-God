@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+
 public class uiButtonHandler : MonoBehaviour {
 	protected bool toggleFlag = true;
 	protected GameObject[] buttonPanels = new GameObject[2];
@@ -13,14 +14,16 @@ public class uiButtonHandler : MonoBehaviour {
 	UnityEngine.Object trapBase;
 	UnityEngine.Object trapGhost;
 	GameObject trapClone;
+
+	public WallManager walls;
 	
 	float location_temp;
-	static int layermask = 1023;
+	static int layermask = 2047;
 	static float vOffset = 0.2f;
 	
 	static int wSize = 5;
 	static float wOffset = wSize / 2.0f;
-	
+
 	Mode mMode;
 	//End my section ---------
 
@@ -43,18 +46,18 @@ public class uiButtonHandler : MonoBehaviour {
 		RaycastHit hit;
 		Vector3 terrainHit;
 		
-		if (mMode == Mode.OBJECT) {
+		if (mMode == Mode.OBJECT ) {
 			// Hold the left mouse button to drag the trap
 			//if (Input.GetButton ("Fire1")) {
 			Debug.Log ("Shit happens more");
 			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 				
-			if (Physics.Raycast (ray, out hit, 200, layermask) && hit.collider.name == "Terrain") {
+			if (Physics.Raycast (ray, out hit, 200, layermask) ){ //&& hit.collider.name == "Terrain") {
 				terrainHit = hit.point;
 				terrainHit.y += vOffset;
 
 				Debug.Log ("$$1 Terrain: x " + terrainHit.x + "  y " + terrainHit.y); 
-				terrainHit = WorldToGrid (terrainHit);
+				terrainHit.y = 1;
 				Debug.Log ("$$2 Terrain: x " + terrainHit.x + "  y " + terrainHit.y); 
 
 				trapClone.transform.Translate (terrainHit - trapClone.transform.position);
@@ -63,8 +66,13 @@ public class uiButtonHandler : MonoBehaviour {
 					
 					UnityEngine.Object.Destroy (trapClone, 0.1f);
 					trapClone = null;
-					
-					Instantiate (trapBase, terrainHit, Quaternion.identity);
+
+					int x = (int) WorldToGrid(terrainHit).x;
+					int z = (int) WorldToGrid (terrainHit).z;
+
+					Vector3 pos = new Vector3((x * wSize) + wOffset, 0.5f, (z * wSize) + wOffset);
+
+					walls.SetList(x, z, (GameObject) Instantiate (trapBase, pos, Quaternion.identity), false);
 					
 					mMode = Mode.OPEN;
 					Debug.Log ("Trap Placed");
@@ -133,7 +141,7 @@ public class uiButtonHandler : MonoBehaviour {
 		} else {
 			terrainHit = new Vector3 (0, 2, 0);
 		}
-			trapClone = (GameObject) Instantiate(trapGhost, hit.point, Quaternion.identity);
+			trapClone = (GameObject) Instantiate(trapGhost, terrainHit, Quaternion.identity);
 		
 		mMode = Mode.OBJECT;
 	}
