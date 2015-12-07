@@ -6,11 +6,10 @@ public class TrapFactory : MonoBehaviour {
 	Object trapBase;
 	Object trapGhost;
 	GameObject trapClone;
-
 	float location_temp;
 	int layermask;
 	float vOffset = 0.2f;
-
+	//script is for using player resources when placing traps	
 	// Use this for initialization
 	void Start () {
 		trapBase = Resources.Load ("Prefabs/SpikePitPrefab 1");
@@ -63,8 +62,8 @@ public class TrapFactory : MonoBehaviour {
 				trapClone = null;
 
 				Instantiate(trapBase, terrainHit, Quaternion.identity);
-
-
+				//hardcoded cost for trap
+				//TODO: change when we have more trap types
 				Debug.Log ("Trap Placed");
 			}
 		}
