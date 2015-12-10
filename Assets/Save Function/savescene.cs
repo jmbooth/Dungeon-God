@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using UnityEditor;
+
 
 //Handles saving/loading a scene, must be attatched to an empty game object
 //to be seen by a button.  The lighting gets messed up sometimes when switching around
@@ -22,13 +22,13 @@ public class savescene: MonoBehaviour{
     public void saveTheScene()
     {
      
-        EditorApplication.Beep();//Important
+       // EditorApplication.Beep();//Important
        
         boxcount++;
         if (boxcount % 2 == 0)
         {
             showGUI = false;
-            EditorApplication.SaveScene(Application.persistentDataPath + "/savedGames " + stringToEdit + ".gd");
+          //  EditorApplication.SaveScene(Application.persistentDataPath + "/savedGames " + stringToEdit + ".gd");
             
         }
         else
@@ -40,7 +40,7 @@ public class savescene: MonoBehaviour{
     //loads a scene.  Click load once to bring up a textbox to enter a file name.  Click it again to attempt to load the given file
     public void loadTheScene()
     {
-        EditorApplication.Beep();//Important
+       // EditorApplication.Beep();//Important
         showLoadGUI = false;
         loadCount++;
         if (loadCount % 2 == 0)
@@ -48,7 +48,7 @@ public class savescene: MonoBehaviour{
             if (File.Exists(Application.persistentDataPath + "/savedGames " + stringToEdit + ".gd"))
             {
                 showLoadGUI = false;
-                EditorApplication.LoadLevelInPlayMode(Application.persistentDataPath + "/savedGames " + stringToEdit + ".gd");
+                //EditorApplication.LoadLevelInPlayMode(Application.persistentDataPath + "/savedGames " + stringToEdit + ".gd");
             }
             else
             {

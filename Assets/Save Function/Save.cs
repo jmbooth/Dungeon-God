@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using UnityEditor;
+
 
 //from http://gamedevelopment.tutsplus.com/tutorials/how-to-save-and-load-your-players-progress-in-unity--cms-20934
 //reference: http://docs.unity3d.com/Manual/script-Serialization.html
@@ -17,7 +17,7 @@ public class Save : MonoBehaviour
     //it's static so we can call it from anywhere
     public  void save2()
     {
-        EditorApplication.Beep();
+        //EditorApplication.Beep();
         showGUI = true;
         Debug.Log("showguid is " + stringToEdit);
         fileNo++;
